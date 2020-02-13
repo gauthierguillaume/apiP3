@@ -1,15 +1,44 @@
-# Creating a RESTful API with Node.js
-This repository accompanies my YouTube video series on building a RESTful API with Node.js: [https://github.com/academind/node-restful-api-tutorial.git](https://github.com/academind/node-restful-api-tutorial.git)
+# API En Marche
+
+C'est une API qui permet à l'application de podomètre En marche de fonctionner
+
+## Installation
+
+Cloner le répertoire
+
+```git
+git clone https://github.com/Jonathan-Renault/apiP3.git
+```
+
+Update dépendance
+
+```bash
+npm update
+```
+
+Ajouter le fichier de conf
 
 ## Usage
-Check out the branch you're interested in (i.e. which belongs to the video in my series you just watched), ```git clone``` it and thereafter run ```npm install```.
 
-Make sure to also add your Mongo Atlas Admin Username to a nodemon.json file (which you have to create).
+```js
+GET  /data     Réception de toutes les données
+POST /data     Envoies de données pour un user
+GET  /data{id} Réception de données en choisissant l'ID
+```
 
-```
-{
-    "env": {
-        "MONGO_ATLAS_PW": "YOUR_MONGO_USER_PW"
-    }
-}
-```
+## Built With
+
+* [Express](https://expressjs.com/) - NodeJS Framework
+
+## Authors
+
+* **Nicolas Becuwe** - *Développeur* - [Lien Git](https://github.com/NikoFLK)
+
+* **Arthur Brunet** - *Développeur* - [Lien Git](https://github.com/ArthurBrunet)
+
+* **Guillaume Gautier** - *Responsable de Projet* - [Lien Git](https://github.com/gauthierguillaume)
+
+* **Quentin Leroy** - *Développeur* - [Lien Git](https://github.com/LambdamanDEV)
+
+* **Jonathan Renault** - *Développeur* - [Lien Git](https://github.com/Jonathan-Renault)
+
